@@ -2,6 +2,7 @@ import { ThirdwebProvider, ConnectButton, useActiveAccount, useWalletBalance } f
 import { client } from "./client";
 import { sepolia } from "thirdweb/chains";
 import WalletInfo from "./walletInfo";
+import FileUploadButton from "./fileUpload";
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
       </div>
 
       <WalletInfo client={client} chain={sepolia} />
+
+      <FileUploadButton/>
     </ThirdwebProvider>
   );
 }
